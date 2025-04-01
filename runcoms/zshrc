@@ -11,3 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+#
+if [[ -s "${ZDOTDIR:-$HOME}/.zsh_alias" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zsh_alias"
+fi
+
+if [[ -s "$HOME/Library/Python/3.7/bin" ]]; then
+    export PATH=$PATH:$HOME/Library/Python/3.7/bin
+fi
